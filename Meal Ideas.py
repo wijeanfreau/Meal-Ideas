@@ -53,10 +53,26 @@ dinner = ['Massuman Curry',
           'Mustard and Maple Pork',
           'Turkey Sandwiches with Bacon and Red Pepper Jelly'
           ]
-print(f'I have {len(dinner)} ideas at my disposal.')
-num_ideas = int(input('How many do you want me to provide? '))
-random_ideas = random.sample(dinner, num_ideas)
+lunch = ['Peanut Butter and Jelly Sandwiches',
+         'Pre-prepared Burritos'
+         ]
+breakfast = ['Waffles',
+             'Pancakes',
+             'Eggs and Bacon'
+             ]
+print('How many dinner ideas would you like?')
+dinput = int(input())
+numdin = int(min(dinput, len(dinner)))
+print('How many lunch ideas would you like?')
+linput = int(input())
+numlun = int(min(linput, len(lunch)))
+print('How many breakfast ideas would you like?')
+binput = int(input())
+numbre = int(min(binput, len(breakfast)))
 
-print(f'Here are {num_ideas} dinner ideas: ')
-for idea in random_ideas:
-    print(str(idea))
+print('Here are your dinner ideas: ')
+print(random.sample(dinner, numdin))
+print('Here are your lunch ideas: ')
+print(random.sample(lunch, numlun))
+print('Here are your breakfast ideas: ')
+print(random.sample(breakfast, numbre))
