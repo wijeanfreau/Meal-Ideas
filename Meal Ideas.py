@@ -31,7 +31,7 @@ dinner = ['Massuman Curry',
           'Vietnamese Cucumber Salad',
           'Chicken Pot Pie',
           'Adas Polo o Morgh (Chicken with Lentil Rice)',
-          'Spaghetti a la Carbonara'
+          'Spaghetti a la Carbonara',
           'Breakfast Burritos',
           'Sloppy Joes',
           'Meatball Subs',
@@ -48,7 +48,10 @@ dinner = ['Massuman Curry',
           'Teriyaki Fried Rice',
           'Dirty Rice',
           'Philly Cheesesteak',
-          'Swedish Meatballs and Egg Noodles'
+          'Swedish Meatballs and Egg Noodles',
+          'Mushroom Pasta',
+          'Mustard and Maple Pork',
+          'Turkey Sandwiches with Bacon and Red Pepper Jelly'
           ]
 print(f'I have {len(dinner)} ideas at my disposal.')
 num_ideas = int(input('How many do you want me to provide? '))
